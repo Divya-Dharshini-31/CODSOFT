@@ -12,7 +12,7 @@ class NumberGame{
         System.out.println("1.Each round will have 10 attempts.");
         System.out.println("2.At start of each round you will be given 10 points.");
         System.out.println("3.For each attempt you take 1 point will be deduced from your score");
-        System.out.println("4.My number will always lie between 0 and 100");
+        System.out.println("4.My number will always lie between 1 and 100");
         System.out.println("----------------GOOD LUCK-----------------");
     }
     
