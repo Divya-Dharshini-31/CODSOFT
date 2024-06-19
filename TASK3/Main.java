@@ -16,8 +16,9 @@ public class Main {
             double balance=sc.nextDouble();
             User user=new User(accNo,name,balance);
             int opt;
-            System.out.println("Press 1 to withdraw. \nPress 2 to Deposit \n3.Press 3 to Check Balance");
+            System.out.println("Press 1 to withdraw. \nPress 2 to Deposit \nPress 3 to Check Balance");
             opt=sc.nextInt();
+            sc.nextLine();
             if(opt==1){
                 System.out.print("Enter amount to withdraw: ");
                 double amount=sc.nextDouble();
@@ -37,7 +38,8 @@ public class Main {
                 ch='n';
             }
             System.out.print("Do you want to continue(y/n): ");
-            ch=sc.nextLine().charAt(0);
+            String s=sc.nextLine();
+            ch=s.charAt(0);
         }
         sc.close();
     }
