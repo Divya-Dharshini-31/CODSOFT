@@ -7,6 +7,8 @@ public class Main {
         System.out.println("----------ATM INTERFACE----------");
         char ch='y';
         while(ch=='y'||ch=='Y'){
+
+            //getting details from the user
             System.out.print("Enter Account number: ");
             int accNo=sc.nextInt();
             sc.nextLine();
@@ -15,6 +17,8 @@ public class Main {
             System.out.print("Enter balance amount(if any): ");
             double balance=sc.nextDouble();
             User user=new User(accNo,name,balance);
+            
+            //selecting which function to perform
             int opt;
             System.out.println("Press 1 to withdraw. \nPress 2 to Deposit \nPress 3 to Check Balance");
             opt=sc.nextInt();
@@ -37,6 +41,8 @@ public class Main {
                 System.out.println("Invalid choice! Exiting...");
                 ch='n';
             }
+
+            //loop condition
             System.out.print("Do you want to continue(y/n): ");
             String s=sc.nextLine();
             ch=s.charAt(0);
