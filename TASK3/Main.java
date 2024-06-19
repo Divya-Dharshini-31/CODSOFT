@@ -37,7 +37,6 @@ public class Main {
             }
             else{
                 System.out.println("Invalid choice! Exiting...");
-                ch='n';
             }
 
         sc.close();
