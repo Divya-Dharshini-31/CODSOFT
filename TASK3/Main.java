@@ -5,8 +5,6 @@ public class Main {
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
         System.out.println("----------ATM INTERFACE----------");
-        char ch='y';
-        while(ch=='y'||ch=='Y'){
 
             //getting details from the user
             System.out.print("Enter Account number: ");
@@ -42,11 +40,6 @@ public class Main {
                 ch='n';
             }
 
-            //loop condition
-            System.out.print("Do you want to continue(y/n): ");
-            String s=sc.nextLine();
-            ch=s.charAt(0);
-        }
         sc.close();
     }
 }
